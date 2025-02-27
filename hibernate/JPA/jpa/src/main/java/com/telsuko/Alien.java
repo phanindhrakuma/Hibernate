@@ -1,0 +1,38 @@
+package com.telsuko;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "students")
+public class Alien {
+    @Id
+    private int rollno;
+    private int marks;
+    private String anme;
+    public int getMarks() {
+        return marks;
+    }
+    public void setMarks(int marks) {
+        this.marks = marks;
+    }
+    public int getRollno() {
+        return rollno;
+    }
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
+    public String getAnme() {
+        return anme;
+    }
+    public void setAnme(String anme) {
+        this.anme = anme;
+    }
+    @Override
+    public String toString() {
+        return "Alien [marks=" + marks + ", rollno=" + rollno + ", anme=" + anme + "]";
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">PanduPanduPandu@123</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/aliens</property>
+
+        <property name="hbm2ddl.auto">create</property> <!-- create / create-drop / update create willl create the table by removing the date present in the same table name  update will only update the data if the table is exested or if the table is not excisted it will create -->
+        <property name="show_sql">true</property> <!-- Show SQL in console -->
+
+    </session-factory>
+</hibernate-configuration>
